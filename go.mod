@@ -16,7 +16,7 @@ replace (
 	github.com/gogo/googleapis => github.com/gogo/googleapis v1.4.1
 	github.com/gogo/protobuf => github.com/gogo/protobuf v1.3.2
 	github.com/google/go-cmp => github.com/google/go-cmp v0.5.5
-	github.com/google/pprof => github.com/google/pprof v0.0.0-20210323184331-8eee2492667d
+	github.com/google/pprof => github.com/google/pprof v0.0.0-20210406050746-ec78c8ac9be2
 	github.com/googleapis/gnostic => github.com/googleapis/gnostic v0.5.4
 	github.com/gophercloud/gophercloud => github.com/gophercloud/gophercloud v0.16.0
 	github.com/gorilla/websocket => github.com/gorilla/websocket v1.4.2
