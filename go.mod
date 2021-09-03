@@ -38,16 +38,16 @@ replace (
 )
 
 require (
-	cloud.google.com/go v0.84.0
-	cloud.google.com/go/storage v1.15.0
+	cloud.google.com/go v0.94.0
+	cloud.google.com/go/storage v1.16.1
 	code.cloudfoundry.org/bytefmt v0.0.0-20210608160410-67692ebc98de
 	contrib.go.opencensus.io/exporter/jaeger v0.2.1
 	contrib.go.opencensus.io/exporter/prometheus v0.3.0
 	contrib.go.opencensus.io/exporter/stackdriver v0.13.8
-	github.com/aws/aws-sdk-go v1.38.35
+	github.com/aws/aws-sdk-go v1.40.34
 	github.com/cespare/xxhash/v2 v2.1.1
 	github.com/envoyproxy/protoc-gen-validate v0.1.0
-	github.com/fsnotify/fsnotify v1.4.9
+	github.com/fsnotify/fsnotify v1.5.1
 	github.com/go-redis/redis/v8 v8.10.0
 	github.com/go-sql-driver/mysql v1.6.0
 	github.com/go-toolsmith/strparse v1.0.0 // indirect
@@ -62,7 +62,7 @@ require (
 	github.com/gorilla/mux v1.8.0
 	github.com/hashicorp/go-version v1.3.0
 	github.com/json-iterator/go v1.1.11
-	github.com/klauspost/compress v1.12.2
+	github.com/klauspost/compress v1.13.5
 	github.com/kpango/fastime v1.0.16
 	github.com/kpango/fuid v0.0.0-20210407064122-2990e29e1ea5
 	github.com/kpango/gache v1.2.5
@@ -78,18 +78,18 @@ require (
 	go.opencensus.io v0.23.0
 	go.uber.org/automaxprocs v1.4.0
 	go.uber.org/goleak v1.1.10
-	go.uber.org/zap v1.17.0
-	gocloud.dev v0.23.0
-	golang.org/x/net v0.0.0-20210614182718-04defd469f4e
-	golang.org/x/oauth2 v0.0.0-20210622215436-a8dc77f794b6
+	go.uber.org/zap v1.19.0
+	gocloud.dev v0.24.0
+	golang.org/x/net v0.0.0-20210825183410-e898025ed96a
+	golang.org/x/oauth2 v0.0.0-20210819190943-2bc19b11175f
 	golang.org/x/sync v0.0.0-20210220032951-036812b2e83c
-	golang.org/x/sys v0.0.0-20210616094352-59db8d763f22
-	golang.org/x/tools v0.1.3
+	golang.org/x/sys v0.0.0-20210831042530-f4d43177bf5e
+	golang.org/x/tools v0.1.5
 	gonum.org/v1/hdf5 v0.0.0-20200504100616-496fefe91614
 	gonum.org/v1/plot v0.9.0
-	google.golang.org/api v0.48.0
-	google.golang.org/genproto v0.0.0-20210617175327-b9e0b3197ced
-	google.golang.org/grpc v1.38.0
+	google.golang.org/api v0.56.0
+	google.golang.org/genproto v0.0.0-20210831024726-fe130286e0e2
+	google.golang.org/grpc v1.40.0
 	gopkg.in/yaml.v2 v2.4.0
 	inet.af/netaddr v0.0.0-20210603230628-bf05d8b52dda
 	k8s.io/api v0.20.7
