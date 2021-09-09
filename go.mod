@@ -77,14 +77,14 @@ require (
 	github.com/yahoojapan/ngtd v0.0.0-20200424071638-9872bbae3700
 	go.opencensus.io v0.23.0
 	go.uber.org/automaxprocs v1.4.0
-	go.uber.org/goleak v1.1.10
+	go.uber.org/goleak v1.1.11
 	go.uber.org/zap v1.17.0
 	gocloud.dev v0.23.0
 	golang.org/x/net v0.0.0-20210614182718-04defd469f4e
 	golang.org/x/oauth2 v0.0.0-20210622215436-a8dc77f794b6
 	golang.org/x/sync v0.0.0-20210220032951-036812b2e83c
 	golang.org/x/sys v0.0.0-20210616094352-59db8d763f22
-	golang.org/x/tools v0.1.3
+	golang.org/x/tools v0.1.5
 	gonum.org/v1/hdf5 v0.0.0-20200504100616-496fefe91614
 	gonum.org/v1/plot v0.9.0
 	google.golang.org/api v0.48.0
