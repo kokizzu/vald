@@ -16,7 +16,7 @@
 
 ARG MAINTAINER="vdaas.org vald team <vald@vdaas.org>"
 
-FROM ubuntu:hirsute AS builder
+FROM ubuntu:devel AS builder
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     ca-certificates \
@@ -56,7 +56,6 @@ COPY Makefile.d Makefile.d
 COPY versions versions
 
 RUN make ngt/install \
-    && make tensorflow/install \
     && make helm/install \
     && make helm-docs/install \
     && make kind/install \

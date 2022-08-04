@@ -23,6 +23,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - name: set git config
+        run: |
+          git config --global --add safe.directory ${GITHUB_WORKSPACE}
       - name: Build the Docker image
         id: build_image
         run: |
@@ -53,6 +56,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - name: set git config
+        run: |
+          git config --global --add safe.directory ${GITHUB_WORKSPACE}
       - name: Build the Docker image
         id: build_image
         run: |
@@ -83,6 +89,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - name: set git config
+        run: |
+          git config --global --add safe.directory ${GITHUB_WORKSPACE}
       - name: Build the Docker image
         id: build_image
         run: |
@@ -113,6 +122,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - name: set git config
+        run: |
+          git config --global --add safe.directory ${GITHUB_WORKSPACE}
       - name: Build the Docker image
         id: build_image
         run: |
@@ -143,6 +155,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - name: set git config
+        run: |
+          git config --global --add safe.directory ${GITHUB_WORKSPACE}
       - name: Build the Docker image
         id: build_image
         run: |
@@ -173,6 +188,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - name: set git config
+        run: |
+          git config --global --add safe.directory ${GITHUB_WORKSPACE}
       - name: Build the Docker image
         id: build_image
         run: |
@@ -203,6 +221,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - name: set git config
+        run: |
+          git config --global --add safe.directory ${GITHUB_WORKSPACE}
       - name: Build the Docker image
         id: build_image
         run: |
@@ -233,41 +254,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - name: set git config
+        run: |
+          git config --global --add safe.directory ${GITHUB_WORKSPACE}
       - name: Build the Docker image
         id: build_image
         run: |
           make docker/build/gateway-filter
           imagename=`make docker/name/gateway-filter`
-          docker tag ${imagename} ${imagename}:${{ github.sha }}
-          echo "::set-output name=IMAGE_NAME::${imagename}"
-        env:
-          DOCKER_BUILDKIT: 1
-      - name: Run vulnerability scanner
-        uses: aquasecurity/trivy-action@master
-        with:
-          image-ref: "${{ steps.build_image.outputs.IMAGE_NAME }}:${{ github.sha }}"
-          format: "table"
-      - name: Run vulnerability scanner
-        uses: aquasecurity/trivy-action@master
-        with:
-          image-ref: "${{ steps.build_image.outputs.IMAGE_NAME }}:${{ github.sha }}"
-          format: "template"
-          template: "@/contrib/sarif.tpl"
-          output: "trivy-results.sarif"
-          severity: "HIGH,CRITICAL"
-      - name: Upload Trivy scan results to Security tab
-        uses: github/codeql-action/upload-sarif@v2
-        with:
-          sarif_file: "trivy-results.sarif"
-  filter-ingress-tensorflow:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: Build the Docker image
-        id: build_image
-        run: |
-          make docker/build/filter-ingress-tensorflow
-          imagename=`make docker/name/filter-ingress-tensorflow`
           docker tag ${imagename} ${imagename}:${{ github.sha }}
           echo "::set-output name=IMAGE_NAME::${imagename}"
         env:
