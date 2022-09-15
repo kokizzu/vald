@@ -164,7 +164,7 @@ require (
 	code.cloudfoundry.org/bytefmt v0.0.0-20211005130812-5bb3c17173e5
 	contrib.go.opencensus.io/exporter/jaeger v0.2.1
 	contrib.go.opencensus.io/exporter/prometheus v0.4.1
-	contrib.go.opencensus.io/exporter/stackdriver v0.13.13
+	contrib.go.opencensus.io/exporter/stackdriver v0.13.14
 	github.com/aws/aws-sdk-go v1.43.31
 	github.com/envoyproxy/protoc-gen-validate v0.6.7
 	github.com/fsnotify/fsnotify v1.5.1
