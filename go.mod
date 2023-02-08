@@ -177,7 +177,7 @@ require (
 	github.com/gorilla/mux v1.8.0
 	github.com/hashicorp/go-version v0.0.0-00010101000000-000000000000
 	github.com/klauspost/compress v1.15.1
-	github.com/kpango/fastime v1.1.4
+	github.com/kpango/fastime v1.1.7
 	github.com/kpango/fuid v0.0.0-20220209050620-e5987ba1ea5e
 	github.com/kpango/gache v1.2.7
 	github.com/kpango/glg v1.6.10
